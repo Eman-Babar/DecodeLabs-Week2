@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechPulse — Future of Innovation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background glows -->
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-glow-2" aria-hidden="true"></div>
+
+  <!-- ============================================
+       NAVBAR
+  ============================================= -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+
+        <!-- Logo -->
+        <a href="#" class="nav-logo" aria-label="TechPulse Home">
+          Tech<span>Pulse</span><span class="logo-dot" aria-hidden="true"></span>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <ul class="nav-links" role="list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <div class="nav-cta">
+          <a href="#" class="btn btn-ghost">Sign In</a>
+          <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <!-- Hamburger (Mobile) — Popover API trigger -->
+        <button
+          class="hamburger-btn"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-hidden="true" style="transform:translateX(100%)">
+      <div class="mobile-menu-header">
+        <span class="nav-logo">Tech<span>Pulse</span></span>
+        <button
+          class="mobile-menu-close"
+          aria-label="Close navigation menu"
+        >✕</button>
+      </div>
+
+      <ul class="mobile-nav-links" role="list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="mobile-nav-cta">
+        <a href="#" class="btn btn-ghost">Sign In</a>
+        <a href="#" class="btn btn-primary">Get Started →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO SECTION
+  ============================================= -->
+  <main>
+    <section class="hero" aria-label="Hero">
+      <div class="container">
+        <div class="hero-inner">
+
+          <!-- Content -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="hero-badge-dot" aria-hidden="true"></span>
+              Now in Public Beta — v2.0 Released
+            </div>
+
+            <h1 class="hero-title">
+              Build the<br/>
+              <span class="highlight">Future</span> of<br/>
+              Innovation
+            </h1>
+
+            <p class="hero-description">
+              A powerful platform for teams who want to move fast, ship clean, and scale effortlessly across every device and market.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#features" class="btn btn-primary">Explore Features →</a>
+              <a href="#" class="btn btn-ghost">Watch Demo ▶</a>
+            </div>
+
+            <div class="hero-stats" role="list">
+              <div class="stat" role="listitem">
+                <span class="stat-value">98K+</span>
+                <span class="stat-label">Active Users</span>
+              </div>
+              <div class="stat" role="listitem">
+                <span class="stat-value">4.9★</span>
+                <span class="stat-label">Rating</span>
+              </div>
+              <div class="stat" role="listitem">
+                <span class="stat-value">99.9%</span>
+                <span class="stat-label">Uptime</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-card-stack">
+              <div class="hero-card-main">
+                <div class="card-metric">
+                  <span class="metric-label">Total Revenue</span>
+                  <span class="metric-value">$284.5K</span>
+                  <span class="metric-change">↑ 18.4% this month</span>
+                </div>
+                <div class="chart-bars" role="img" aria-label="Revenue chart">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar active"></div>
+                  <div class="bar"></div>
+                </div>
+              </div>
+
+              <div class="floating-badge floating-badge-1">
+                <div class="badge-icon green">🚀</div>
+                <div>
+                  <div style="font-weight:700;color:var(--clr-heading)">Deploy Ready</div>
+                  <div style="color:var(--clr-text-muted)">All systems go</div>
+                </div>
+              </div>
+
+              <div class="floating-badge floating-badge-2">
+                <div class="badge-icon blue">👥</div>
+                <div>
+                  <div style="font-weight:700;color:var(--clr-heading)">+248 Users</div>
+                  <div style="color:var(--clr-text-muted)">Joined today</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FEATURES SECTION — CSS Grid
+    ============================================= -->
+    <section class="features" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="features-header">
+          <div class="section-label" style="justify-content:center">What we offer</div>
+          <h2 class="section-title" id="features-title">Everything you need<br/>to ship faster</h2>
+          <p class="section-subtitle">Built for modern teams who demand performance, reliability, and beautiful design without compromise.</p>
+        </div>
+
+        <div class="features-grid">
+
+          <!-- Featured wide card -->
+          <article class="feature-card featured">
+            <div style="flex:1;min-width:0">
+              <div class="feature-icon icon-blue">⚡</div>
+              <h3 class="feature-title" style="margin-top:1rem">Real-Time Analytics Dashboard</h3>
+              <p class="feature-desc">Monitor every metric that matters in real time. From user activity to revenue streams, your data flows live into a single, beautiful interface.</p>
+              <span class="feature-tag">⬆ Most Popular</span>
+            </div>
+            <div class="featured-visual">
+              <div class="mini-dashboard" role="img" aria-label="Analytics preview">
+                <div class="mini-dash-row">
+                  <span><span class="dash-dot" style="background:#38bdf8"></span>Users</span>
+                  <div class="dash-bar-wrap"><div class="dash-bar-fill" style="width:82%;background:#38bdf8"></div></div>
+                  <span style="color:var(--clr-heading);font-weight:600">82%</span>
+                </div>
+                <div class="mini-dash-row">
+                  <span><span class="dash-dot" style="background:#818cf8"></span>Revenue</span>
+                  <div class="dash-bar-wrap"><div class="dash-bar-fill" style="width:67%;background:#818cf8"></div></div>
+                  <span style="color:var(--clr-heading);font-weight:600">67%</span>
+                </div>
+                <div class="mini-dash-row">
+                  <span><span class="dash-dot" style="background:#34d399"></span>Growth</span>
+                  <div class="dash-bar-wrap"><div class="dash-bar-fill" style="width:91%;background:#34d399"></div></div>
+                  <span style="color:var(--clr-heading);font-weight:600">91%</span>
+                </div>
+                <div class="mini-dash-row">
+                  <span><span class="dash-dot" style="background:#fb923c"></span>Churn</span>
+                  <div class="dash-bar-wrap"><div class="dash-bar-fill" style="width:12%;background:#fb923c"></div></div>
+                  <span style="color:var(--clr-heading);font-weight:600">12%</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Standard cards -->
+          <article class="feature-card">
+            <div class="feature-icon icon-purple">🔒</div>
+            <h3 class="feature-title">Enterprise Security</h3>
+            <p class="feature-desc">End-to-end encryption, SOC 2 compliance, and zero-trust architecture to keep your data fortress-grade safe.</p>
+            <span class="feature-tag" style="background:rgba(129,140,248,0.1);border-color:rgba(129,140,248,0.2);color:#818cf8">SOC 2 Certified</span>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-green">🌐</div>
+            <h3 class="feature-title">Global CDN</h3>
+            <p class="feature-desc">200+ edge nodes worldwide. Sub-50ms latency no matter where your users are. Your app, everywhere, always fast.</p>
+            <span class="feature-tag">200 Edge Nodes</span>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon icon-orange">🤖</div>
+            <h3 class="feature-title">AI Automation</h3>
+            <p class="feature-desc">Let intelligent workflows handle the repetitive work. Automate tasks, predict trends, and surface insights instantly.</p>
+            <span class="feature-tag" style="background:rgba(251,146,60,0.1);border-color:rgba(251,146,60,0.2);color:#fb923c">Powered by AI</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SERVICES SECTION — Flexbox
+    ============================================= -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="services-inner">
+
+          <div class="services-content">
+            <div class="section-label">How we help</div>
+            <h2 class="section-title" id="services-title">Services built<br/>around you</h2>
+            <p class="section-subtitle" style="margin-inline:0;margin-top:1rem">We don't just hand you tools — we build end-to-end solutions that scale with your ambitions.</p>
+            <a href="#contact" class="btn btn-primary" style="margin-top:2rem">Talk to us →</a>
+          </div>
+
+          <ul class="services-list" role="list">
+            <li class="service-item active">
+              <span class="service-num">01</span>
+              <div class="service-info">
+                <h3>Product Strategy</h3>
+                <p>From zero to launch — roadmapping, prototyping, and shipping with precision.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <span class="service-num">02</span>
+              <div class="service-info">
+                <h3>Frontend Engineering</h3>
+                <p>Pixel-perfect, responsive interfaces engineered for performance and delight.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <span class="service-num">03</span>
+              <div class="service-info">
+                <h3>Cloud Infrastructure</h3>
+                <p>Scalable, secure, and resilient infrastructure that grows as you do.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <span class="service-num">04</span>
+              <div class="service-info">
+                <h3>Data & Analytics</h3>
+                <p>Turn raw data into actionable intelligence with powerful dashboards.</p>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TEAM SECTION — CSS Grid
+    ============================================= -->
+    <section class="team" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section-label" style="justify-content:center">The people</div>
+        <h2 class="section-title" id="team-title" style="text-align:center;margin-top:0.5rem">Meet our team</h2>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="avatar" style="background:rgba(56,189,248,0.1)">👩‍💻</div>
+            <h3 class="team-name">Aria Chen</h3>
+            <span class="team-role">Lead Designer</span>
+            <p class="team-desc">Crafts interfaces that are as beautiful as they are functional.</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar" style="background:rgba(129,140,248,0.1)">👨‍🔬</div>
+            <h3 class="team-name">Marcus Webb</h3>
+            <span class="team-role">Head of Engineering</span>
+            <p class="team-desc">Architects scalable systems that don't break under pressure.</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar" style="background:rgba(52,211,153,0.1)">👩‍📊</div>
+            <h3 class="team-name">Leila Hassan</h3>
+            <span class="team-role">Data Scientist</span>
+            <p class="team-desc">Finds the signal in the noise and turns it into strategy.</p>
+          </article>
+          <article class="team-card">
+            <div class="avatar" style="background:rgba(251,146,60,0.1)">👨‍🚀</div>
+            <h3 class="team-name">Rajan Patel</h3>
+            <span class="team-role">Product Manager</span>
+            <p class="team-desc">Bridges vision and execution with clarity and speed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CTA SECTION
+    ============================================= -->
+    <section class="cta-section" id="contact" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-box">
+          <div class="section-label" style="justify-content:center">Get started</div>
+          <h2 class="section-title" id="cta-title" style="margin-top:0.5rem">
+            Ready to build something<br/>
+            <span style="background:linear-gradient(135deg,var(--clr-accent),var(--clr-accent-2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">extraordinary?</span>
+          </h2>
+          <p class="section-subtitle">
+            Join thousands of teams already building the future with TechPulse. Start free, scale as you grow.
+          </p>
+          <div class="cta-actions">
+            <a href="#" class="btn btn-primary">Start for Free →</a>
+            <a href="#" class="btn btn-ghost">Book a Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER — CSS Grid
+  ============================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" aria-label="TechPulse Home">Tech<span>Pulse</span><span class="logo-dot" aria-hidden="true"></span></a>
+          <p>Building the future of digital products, one pixel and one commit at a time.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul role="list">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Roadmap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul role="list">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 TechPulse. All rights reserved. Built with ♥ by a DecodeLabs Intern.</p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="GitHub">𝗚</a>
+          <a href="#" class="social-link" aria-label="Twitter/X">𝕏</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
